@@ -22,7 +22,7 @@
 		03AF045515C84C230061A0D7 /* GSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AF045415C84C230061A0D7 /* GSViewController.m */; };
 		03AF045D15C84C760061A0D7 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AF045B15C84C760061A0D7 /* GLKit.framework */; };
 		03AF045E15C84C760061A0D7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AF045C15C84C760061A0D7 /* OpenGLES.framework */; };
-		03AF046115C84CD10061A0D7 /* GSVideoProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AF046015C84CD10061A0D7 /* GSVideoProcessor.m */; };
+		03AF046115C84CD10061A0D7 /* GSVideoProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AF046015C84CD10061A0D7 /* GSVideoProcessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		03AF046415C84CF70061A0D7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AF046215C84CF70061A0D7 /* AVFoundation.framework */; };
 		03AF046515C84CF70061A0D7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AF046315C84CF70061A0D7 /* CoreMotion.framework */; };
 		03AF046715C84D190061A0D7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AF046615C84D190061A0D7 /* CoreVideo.framework */; };
@@ -333,6 +333,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenScreen/GreenScreen-Prefix.pch";
 				INFOPLIST_FILE = "GreenScreen/GreenScreen-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -344,6 +345,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenScreen/GreenScreen-Prefix.pch";
 				INFOPLIST_FILE = "GreenScreen/GreenScreen-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

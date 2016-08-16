@@ -16,6 +16,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import "GSVideoProcessor.h"
 #import "GSGreenScreenEffect.h"
 
+
+#define GL_BGR 0x80E0 
+#define GL_BGRA 0x80E1
+
 @interface GSViewController ()
    <GSVideoProcessorDelegate>
 
@@ -132,12 +136,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 {
     // Native video orientation is landscape with the button on the right.
     // The video processor rotates vide as needed, so don't autorotate also
-    return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+    return (interfaceOrientation == UIInterfaceOrientationUnknown);
 }
 
 // Tell the system what we support
 - (NSUInteger)supportedInterfaceOrientations {
-    return UIInterfaceOrientationLandscapeRight;
+    return UIInterfaceOrientationPortrait;
 }
 
 // Tell the system It should autorotate
@@ -147,7 +151,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 // Tell the system which initial orientation we want to have
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    return UIDeviceOrientationLandscapeRight;
+    return UIInterfaceOrientationPortrait;
 }
 
 #pragma mark - Render Support

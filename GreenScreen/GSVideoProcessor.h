@@ -19,7 +19,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @interface GSVideoProcessor : NSObject <AVCaptureAudioDataOutputSampleBufferDelegate, AVCaptureVideoDataOutputSampleBufferDelegate> 
 {  
-    id <GSVideoProcessorDelegate> __weak delegate;
+    id <GSVideoProcessorDelegate> delegate;
 
 	AVCaptureSession *captureSession;
 	AVCaptureConnection *videoConnection;
